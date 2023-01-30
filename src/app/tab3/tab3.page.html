@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Ponto de Coleta </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-collect></app-collect>
+
+  <div class="map">
+    <capacitor-google-map #map></capacitor-google-map>
+    <ion-button
+      (click)="createMap()"
+      style="padding: 30px; font-size: 30px; margin: 30px"
+    >
+      Clique aqui para ativar o mapa
+    </ion-button>
+  </div>
+</ion-content>
